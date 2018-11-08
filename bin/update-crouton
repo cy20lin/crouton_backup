@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pushd /usr/local/bin >/dev/null 2>&1
+sudo curl -Ls -o crouton -w %{url_effective} https://github.com/dnschneid/crouton/raw/master/installer/crouton >/dev/null
+sudo chmod a+x /usr/local/bin/crouton
+popd >/dev/null 2>&1

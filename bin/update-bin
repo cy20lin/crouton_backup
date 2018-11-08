@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo crouton -b -p /media/removable/Linux
+sudo crouton -b -p /usr/local

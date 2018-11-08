@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo cp -a /media/removable/Backup/bin/. /media/removable/Linux/bin
+sudo cp -a /media/removable/Backup/crouton/bin/. /media/removable/Linux/bin
+sudo cp -a /media/removable/Backup/bin/. /usr/local/bin
+sudo cp -a /media/removable/Backup/crouton/bin/. /usr/local/bin

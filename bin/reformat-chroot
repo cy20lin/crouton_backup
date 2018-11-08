@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DEVICE=$(df /media/removable/Linux/ | tail -n 1 | cut -d ' ' -f 1)
+if test ! -z "${DEVICE}" && sudo umount /media/removable/Linux
+then
+    yes | /sbin/mkfs.ext4 "${DEVICE}" -L Linux
+    mount "${DEVICE}" /media/removable/Linux
+fi
