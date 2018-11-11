@@ -1,4 +1,5 @@
 #!/bin/bash
 
 sudo cp -a /etc/init/crouton.conf /media/removable/Backup/chromeos/etc/init/crouton.conf
-sudo cp -a /home/chronos/Downloads/user/crouton.init /media/removable/Backup/chromeos/home/chronos/Downloads/user/crouton.init
+sudo cp -a /etc/init/mnt-crouton.conf /media/removable/Backup/chromeos/etc/init/mnt-crouton.conf
+sudo cp -a /home/chronos/user/Downloads/crouton.init /media/removable/Backup/chromeos/home/chronos/user/Downloads/crouton.init

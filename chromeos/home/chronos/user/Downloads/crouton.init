@@ -59,7 +59,9 @@ START_DE=enter-chroot
 #CHROOT_APP=xterm
 ## below 'sleep infinity' commonly used with 
 ## START_DE=enter-chroot (above) for headless operations, etc.
-#CHROOT_APP=sleep infinity
+# CHROOT_APP="bash ~/.init.d/init.bash"
+# CHROOT_APP=sleep infinity
+CHROOT_APP=bash -c '"bash ~/.init.d/init.bash"'
 
 ###
 ### XMETHOD: Override the default XMETHOD for this session - if installed, some examples shown
