@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo cp -a /media/removable/Backup/chromeos/local/bin/. /usr/local/bin/

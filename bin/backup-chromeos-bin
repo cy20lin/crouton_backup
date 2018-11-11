@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo cp -a /usr/local/bin/crouton /media/removable/Backup/chromeos/local/bin/crouton
+sudo cp -a /usr/local/bin/change-kernel-flags /media/removable/Backup/chromeos/local/bin/change-kernel-flags

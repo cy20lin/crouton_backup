@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo change-kernel-flags -f "disablevmx=off lsm.module_locking=0 dev_boot_usb=1 dev_boot_legacy=1 dev_boot_signed_only=0"
