@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo mkdir -p /media/removable/Backup/chromeos/mnt/stateful_partition/backups
+sudo cp -a /mnt/stateful_partition/backups/. /media/removable/Backup/chromeos/mnt/stateful_partition/backups
