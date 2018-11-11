@@ -1,3 +1,5 @@
 #!/bin/bash
 
 sudo change-kernel-flags -f "disablevmx=off lsm.module_locking=0 dev_boot_usb=1 dev_boot_legacy=1 dev_boot_signed_only=0"
+sudo /usr/libexec/debugd/helpers/dev_features_usb_boot
+sudo /usr/libexec/debugd/helpers/dev_features_rootfs_verification

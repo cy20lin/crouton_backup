@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# https://mrchromebox.tech/#fwscript
+cd
+curl -LO https://mrchromebox.tech/firmware-util.sh && sudo bash firmware-util.sh
