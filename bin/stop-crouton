@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo initctl stop crouton
