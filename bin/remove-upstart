@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo rm -rf /etc/init/crouton.conf
-sudo rm -rf /home/chronos/Downloads/crouton.init
+sudo rm -rf /home/chronos/user/Downloads/crouton.init
