@@ -1,11 +1,3 @@
 #!/bin/sh
-#sudo mkdir -p /home/chronos/user/crouton
-#sudo chown chronos:chronos /home/chronos/user/crouton
-#sudo umount /dev/mmcblk1p3
-#sudo mount /dev/mmcblk1p3 /home/chronos/user/crouton
-#sudo enter-chroot -c /home/chronos/user/crouton
-#sudo mkdir
-#mkdir ~/crouton
-#sudo mount /dev/mmcblk1p3 ~/crouton
-#sudo remount-chroot
-sudo enter-chroot -c /var/crouton/chroots
+
+sudo enter-chroot

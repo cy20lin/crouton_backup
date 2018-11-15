@@ -1,9 +1,10 @@
 #!/bin/bash
 
-if test -e /media/removable/Linux/ -a -e /media/removable/Backup/crouton/chroots/
+CROUTON_DIR=/var/crouton
+if test -e "${CROUTON_DIR}" -a -e /media/removable/Backup/crouton/chroots/
 then
     sudo edit-chroot \
     -b xenial \
-    -c /media/removable/Linux/chroots \
+    -c "${CROUTON_DIR}/chroots" \
     -f /media/removable/Backup/crouton/chroots
 fi

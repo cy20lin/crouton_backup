@@ -1,4 +1,5 @@
 #!/bin/bash
 
-sudo crouton -b -p /media/removable/Linux
+CROUTON_DIR=/var/crouton
+sudo crouton -b -p "${CROUTON_DIR}"
 sudo crouton -b -p /usr/local

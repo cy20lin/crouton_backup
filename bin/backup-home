@@ -1,8 +1,9 @@
 #!/bin/bash 
 
 TIME_STAMP="$(date +%Y%m%d-%H%M)"
+CROUTON_DIR=/var/crouton
 sudo rm /media/removable/Backup/crouton/home/*.tmp 2>/dev/null
 sudo mkdir -p /media/removable/Bacup/crouton/home
 sudo tar -cvpzf "/media/removable/Backup/crouton/home/cy20lin-${TIME_STAMP}.tar.gz.tmp" --exclude=./.cache --exclude=./tmp --exclude=./Downloads/* \
-    -C /media/removable/Linux/chroots/xenial/home/cy20lin .
+    -C "${CROUTON_DIR}/chroots/xenial/home/cy20lin" .
 sudo mv cy20lin-${TIME_STAMP}.tar.gz.tmp cy20lin-${TIME_STAMP}.tar.gz

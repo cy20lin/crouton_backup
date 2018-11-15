@@ -1,4 +1,4 @@
 #!/bin/bash 
 
-sudo mkdir -p /media/removable/Linux 
+sudo mkdir -p /media/removable/Linux
 sudo mount /dev/mmcblk1p3 /media/removable/Linux

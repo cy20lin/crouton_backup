@@ -1,4 +1,9 @@
 #!/bin/bash
 
-sudo rm -rf /etc/init/crouton.conf
 sudo rm -rf /home/chronos/user/Downloads/crouton.init
+sudo rm -rf /etc/init/mnt-crouton.conf
+sudo rm -rf /etc/init/crouton.conf
+sudo rm -rf /etc/init/crouton-sommelier.conf
+sudo rm -rf /etc/init/crouton-chelf.conf
+sudo rm -rf /etc/init/crouton-chromix-too-server.conf
+sudo rm -rf /etc/init/crouton-emacs_daemon.conf

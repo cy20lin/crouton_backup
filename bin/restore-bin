@@ -1,7 +1,9 @@
 #!/bin/bash
 
-sudo cp -a /media/removable/Backup/bin/. /media/removable/Linux/bin
-sudo cp -a /media/removable/Backup/crouton/bin/. /media/removable/Linux/bin
-sudo cp -a /media/removable/Backup/bin/. /usr/local/bin
-sudo cp -a /media/removable/Backup/crouton/bin/. /usr/local/bin
+CROUTON_DIR=/var/crouton
+sudo cp -a /media/removable/Backup/bin/.                    "${CROUTON_DIR}/bin"
+sudo cp -a /media/removable/Backup/crouton/bin/.            "${CROUTON_DIR}/bin"
+sudo cp -a /media/removable/Backup/chromeos/usr/local/bin/. "${CROUTON_DIR}/bin"
+sudo cp -a /media/removable/Backup/bin/.                    /usr/local/bin
+sudo cp -a /media/removable/Backup/crouton/bin/.            /usr/local/bin
 sudo cp -a /media/removable/Backup/chromeos/usr/local/bin/. /usr/local/bin

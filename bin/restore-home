@@ -1,5 +1,9 @@
 #!/bin/bash
 
-test ! -e /media/removable/Linux/chroots/xenial/home/cy20lin && sudo mkdir -p /media/removable/Linux/chroots/xenial/home/cy20lin 
-sudo chown chronos:chronos /media/removable/Linux/chroots/xenial/home/cy20lin
-tar -xvzf "/media/removable/Backup/crouton/home/$(cd /media/removable/Backup/crouton/home && ls -t1 | grep '.tar.gz$' | head -n 1)"  -C "/media/removable/Linux/chroots/xenial/home/cy20lin"
+CHROOTS_DIR=/usr/local/chroots
+if test -d "${CHROOTS_DIR}/xenial/home/cy20lin"
+then
+    sudo chown chronos:chronos ${CHROOTS_DIR}/xenial/home/cy20lin
+    BACKUP_ARCHIVE="$(cd /media/removable/Backup/crouton/home && ls -t1 | grep '.tar.gz$' | head -n 1)"
+    tar -xvzf "/media/removable/Backup/crouton/home/${BACKUP_ARCHIVE}"  -C "${CHROOTS_DIR}/xenial/home/cy20lin"
+fi

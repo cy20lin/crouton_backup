@@ -1,8 +1,11 @@
 #!/bin/bash
 
-if test -e /media/removable/Linux/ -a -e /media/removable/Backup/crouton/chroots/
+CROUTON_DIR=/var/crouton
+if test -e "${CROUTON_DIR}/" -a -e /media/removable/Backup/crouton/chroots/
 then
+    ARCHIVE_DIR="$(cd /media/removable/Backup/crouton/chroots && ls -t1 | grep '.tar.gz$' | head -n 1)"
+    sudo rm /media/removable/Backup/crouton/chroots/*.tmp 2>/dev/null
     sudo crouton \
-    -p /media/removable/Linux \
-    -f /media/removable/Backup/crouton/chroots/$(cd /media/removable/Backup/crouton/chroots && ls -t1 | grep '.tar.gz$' | head -n 1)
+    -p ${CROUTON_DIR} \
+    -f "/media/removable/Backup/crouton/chroots/${ARCHIVE_DIR}"
 fi

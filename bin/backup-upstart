@@ -1,5 +1,9 @@
 #!/bin/bash
 
-sudo cp -a /etc/init/crouton.conf /media/removable/Backup/chromeos/etc/init/crouton.conf
-sudo cp -a /etc/init/mnt-crouton.conf /media/removable/Backup/chromeos/etc/init/mnt-crouton.conf
 sudo cp -a /home/chronos/user/Downloads/crouton.init /media/removable/Backup/chromeos/home/chronos/user/Downloads/crouton.init
+sudo cp -a /etc/init/mnt-crouton.conf                /media/removable/Backup/chromeos/etc/init/mnt-crouton.conf
+sudo cp -a /etc/init/crouton.conf                    /media/removable/Backup/chromeos/etc/init/crouton.conf
+sudo cp -a /etc/init/crouton-sommelier.conf          /media/removable/Backup/chromeos/etc/init/crouton-sommelier.conf
+sudo cp -a /etc/init/crouton-chelf.conf              /media/removable/Backup/chromeos/etc/init/crouton-chelf.conf
+sudo cp -a /etc/init/crouton-chromix-too-server.conf /media/removable/Backup/chromeos/etc/init/crouton-chromix-too-server.conf
+sudo cp -a /etc/init/crouton-emacs_daemon.conf       /media/removable/Backup/chromeos/etc/init/crouton-emacs_daemon.conf
